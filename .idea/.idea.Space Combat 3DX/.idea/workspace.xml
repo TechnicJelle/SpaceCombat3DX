@@ -5,128 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5355eee0-98da-4a93-8856-7719a55e4d43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials/large_asteroid.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials/large_asteroid.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials/skybox.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials/skybox.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials/small_asteroid.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Materials/small_asteroid.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD0.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD0.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD0.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD0.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD0.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD0.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Scripts/RandomRotator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Scripts/RandomRotator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/back.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/bottom.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/front.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/left.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/right.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/Skybox/up.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/seamless_rock_texture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/seamless_rock_texture.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/seamless_rock_texture_detail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Textures/seamless_rock_texture_detail.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo/Demo.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo/Demo.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo/DemoSettings.lighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo/DemoSettings.lighting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Ship.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Ship.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Skybox.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Skybox.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Player Ship.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Player Ship.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/FollowTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/FollowTarget.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/World.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/World/cube_map_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/World/cube_map_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/Cube Cam.blend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/Cube Cam.blend1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/Cube Map Compositor.blend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/Cube Map Compositor.blend1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_map_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_tile_0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_tile_0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_tile_0003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_tile_0004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_tile_0005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/cube_tile_0006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Cube Map Creation Toolkit/side mapping.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blender/Player Ship.blend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ClusterInputManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Combat 3DX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Combat 3DX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Prefabs/Asteroid 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Scripts/RandomRotator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Scripts/RandomRotator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asteroids Pack/Demo/Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,8 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Asteroids Pack/Assets/Scripts/RandomRotator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EffectController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/EffectController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Playables/ControlPlayableInspector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Samples~/Customization/Annotation/Editor/ReplaceAnnotationDescriptionAction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -167,7 +57,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Projects\Unity\Space Combat 3DX&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Projects\Unity\Space Combat 3DX" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -208,8 +98,24 @@
       <workItem from="1654852175897" duration="4000" />
       <workItem from="1655329891977" duration="2000" />
       <workItem from="1655451164567" duration="5341000" />
-      <workItem from="1656587692227" duration="12473000" />
+      <workItem from="1656587692227" duration="13849000" />
+      <workItem from="1656614265285" duration="63000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit! Space Flying Sim is a thing!">
+      <created>1656603588979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656603588979</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Build settings">
+      <created>1656604123872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656604123872</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -228,5 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Commit! Space Flying Sim is a thing!" />
+    <MESSAGE value="Build settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build settings" />
   </component>
 </project>
