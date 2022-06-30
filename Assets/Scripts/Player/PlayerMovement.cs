@@ -36,12 +36,12 @@ namespace Player
 
 			float mouseY = Input.mousePosition.y / Screen.height * 2 - 1;
 			if(Math.Abs(mouseY) > threshold)
-				transform.Rotate(transform.InverseTransformDirection(transform.right), -mouseY * pitchSpeed * Time.deltaTime);
+				transform.Rotate(transform.InverseTransformDirection(transform.right), -mouseY * pitchSpeed * Time.fixedDeltaTime);
 			// Debug.Log("mouse pos: " + mouseY);
 
 			float mouseX = Input.mousePosition.x / Screen.width * 2 - 1;
 			if (Math.Abs(mouseX) > threshold)
-				transform.Rotate(transform.InverseTransformDirection(transform.forward), -mouseX * rollSpeed * Time.deltaTime);
+				transform.Rotate(transform.InverseTransformDirection(transform.forward), -mouseX * rollSpeed * Time.fixedDeltaTime);
 
 
 

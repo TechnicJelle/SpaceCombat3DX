@@ -40,18 +40,12 @@ namespace Camera
 			_myTransform.position = targetPosition;
 
 			// === CAMERA FOV === //
-			_myCamera.fieldOfView = Map(_targetRigidbody.velocity.magnitude, 0, PlayerMovement.MaxSpeed, lowestFOV, highestFOV);
+			_myCamera.fieldOfView = (float) Utils.Map(_targetRigidbody.velocity.magnitude, 0, PlayerMovement.MaxSpeed, lowestFOV, highestFOV);
 
 			// === CAMERA ROTATION === //
 			Quaternion targetRotation = target.transform.rotation;
 			_myTransform.rotation = targetRotation;
 			_myTransform.Rotate(rotation);
-
-		}
-
-		private static float Map(float value, float fromSource, float toSource, float fromTarget, float toTarget)
-		{
-			return (value - fromSource) / (toSource - fromSource) * (toTarget - fromTarget) + fromTarget;
 		}
 	}
 }
