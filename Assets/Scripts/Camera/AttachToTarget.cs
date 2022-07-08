@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Camera
 {
-	public class FollowTarget : MonoBehaviour
+	public class AttachToTarget : MonoBehaviour
 	{
 		public GameObject target;
 		public Vector3 offset = new(0, 3, -5);

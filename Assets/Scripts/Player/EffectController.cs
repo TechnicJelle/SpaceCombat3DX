@@ -46,8 +46,8 @@ namespace Player
 			float speedLinesEmissionRateOverTimeMultiplier = (fac < speedLinesThreshold ? 0 : fac) * _speedLinesEmissionRateOverTimeMultiplier;
 			_speedLinesEmission.rateOverTimeMultiplier = speedLinesEmissionRateOverTimeMultiplier;
 
-			Debug.Log($"ThrustersEmissionOverTimeMultiplier: {thrustersEmissionRateOverTimeMultiplier}" + " " +
-			          $"SpeedLinesEmissionOverTimeMultiplier: {speedLinesEmissionRateOverTimeMultiplier}");
+			// Debug.Log($"ThrustersEmissionOverTimeMultiplier: {thrustersEmissionRateOverTimeMultiplier}" + " " +
+			          // $"SpeedLinesEmissionOverTimeMultiplier: {speedLinesEmissionRateOverTimeMultiplier}");
 		}
 	}
 }
