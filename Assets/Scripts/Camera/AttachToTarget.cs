@@ -18,7 +18,8 @@ namespace Camera
 		private Transform _myTransform;
 		private Rigidbody _targetRigidbody;
 
-		// Start is called before the first frame update
+		private UnityEngine.Camera[] _childCameras;
+
 		private void Start()
 		{
 			_myTransform = transform;
@@ -28,9 +29,9 @@ namespace Camera
 			{
 				Debug.LogError("Target has no rigidbody");
 			}
+			_childCameras = GetComponentsInChildren<UnityEngine.Camera>();
 		}
 
-		// Update is called once per frame
 		private void Update()
 		{
 			// === CAMERA POSITION & OFFSET === //
@@ -40,7 +41,12 @@ namespace Camera
 			_myTransform.position = targetPosition;
 
 			// === CAMERA FOV === //
-			_myCamera.fieldOfView = (float) Utils.Map(_targetRigidbody.velocity.magnitude, 0, PlayerMovement.MaxSpeed, lowestFOV, highestFOV);
+			float fov = (float) Utils.Map(_targetRigidbody.velocity.magnitude, 0, PlayerMovement.MaxSpeed, lowestFOV, highestFOV);
+			_myCamera.fieldOfView = fov;
+			foreach (UnityEngine.Camera childCamera in _childCameras)
+			{
+				childCamera.fieldOfView = fov;
+			}
 
 			// === CAMERA ROTATION === //
 			Quaternion targetRotation = target.transform.rotation;
