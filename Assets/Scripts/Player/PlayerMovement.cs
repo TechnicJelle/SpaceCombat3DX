@@ -18,13 +18,12 @@ namespace Player
 
 		public static float MaxSpeed = 10;
 
-		private Rigidbody _rigidbody;
+		private Rigidbody _rb;
 
-		// Start is called before the first frame update
 		private void Start()
 		{
-			Debug.Log("Player Movement");
-			_rigidbody = GetComponent<Rigidbody>();
+			_rb = GetComponent<Rigidbody>();
+			if(_rb == null) Debug.LogError("PlayerMovement: Rigidbody not found!");
 		}
 
 		private void FixedUpdate()
@@ -38,7 +37,7 @@ namespace Player
 			// mousePos *= size / 2;
 
 			float mouseY = Input.mousePosition.y / Screen.height * 2 - 1;
-			float rotSpeedFac = (float) Utils.Map(_rigidbody.velocity.magnitude, 0, MaxSpeed, speedFacMin, speedFacMax);
+			float rotSpeedFac = (float) Utils.Map(_rb.velocity.magnitude, 0, MaxSpeed, speedFacMin, speedFacMax);
 			if(Math.Abs(mouseY) > threshold)
 				transform.Rotate(transform.InverseTransformDirection(transform.right), -mouseY * pitchSpeed * Time.fixedDeltaTime * rotSpeedFac);
 			// Debug.Log("mouse pos: " + mouseY);
@@ -53,17 +52,17 @@ namespace Player
 
 			// === MOVEMENT ===	//
 			Vector3 addedForce = Input.GetAxis("Vertical") * thrust * Time.deltaTime * transform.forward;
-			MaxSpeed = Math.Max(MaxSpeed, (addedForce.magnitude / _rigidbody.drag - Time.fixedDeltaTime * addedForce.magnitude) / _rigidbody.mass);
-			if(_rigidbody.velocity.magnitude > MaxSpeed * 0.1f)
+			MaxSpeed = Math.Max(MaxSpeed, (addedForce.magnitude / _rb.drag - Time.fixedDeltaTime * addedForce.magnitude) / _rb.mass);
+			if(_rb.velocity.magnitude > MaxSpeed * 0.1f)
 				MaxSpeed *= 0.999f;
 			// Debug.Log("MaxSpeed: " + MaxSpeed);
 
-			// float fac = thrust / (_rigidbody.velocity.sqrMagnitude + thrust / maxSpeed);
-			// Debug.Log(fac + ", " + _rigidbody.velocity.sqrMagnitude);
-			// _rigidbody.AddForce(Input.GetAxis("Vertical") * fac * Time.deltaTime * transform.forward);
+			// float fac = thrust / (_rb.velocity.sqrMagnitude + thrust / maxSpeed);
+			// Debug.Log(fac + ", " + _rb.velocity.sqrMagnitude);
+			// _rb.AddForce(Input.GetAxis("Vertical") * fac * Time.deltaTime * transform.forward);
 
-			_rigidbody.AddForce(addedForce);
-			// Debug.Log(_rigidbody.velocity.magnitude);
+			_rb.AddForce(addedForce);
+			// Debug.Log(_rb.velocity.magnitude);
 		}
 	}
 }

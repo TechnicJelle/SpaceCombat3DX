@@ -24,11 +24,9 @@ namespace Camera
 		{
 			_myTransform = transform;
 			_myCamera = GetComponent<UnityEngine.Camera>();
+			if(_myCamera == null) Debug.LogError("This game object does not have a camera component!");
 			_targetRigidbody = target.GetComponent<Rigidbody>();
-			if(_targetRigidbody == null)
-			{
-				Debug.LogError("Target has no rigidbody");
-			}
+			if(_targetRigidbody == null) Debug.LogError("Target has no rigidbody");
 			_childCameras = GetComponentsInChildren<UnityEngine.Camera>();
 		}
 

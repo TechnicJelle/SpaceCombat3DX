@@ -1,24 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
-using Player;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Speedometer : MonoBehaviour
+namespace Player
 {
-	public Slider slider;
-
-	private Rigidbody _rb;
-
-	// Start is called before the first frame update
-	private void Start()
+	public class Speedometer : MonoBehaviour
 	{
-		_rb = GetComponent<Rigidbody>();
-	}
+		public Slider slider;
 
-	// Update is called once per frame
-	private void Update()
-	{
-		slider.value = _rb.velocity.magnitude / PlayerMovement.MaxSpeed;
+		private Rigidbody _rb;
+
+		private void Start()
+		{
+			_rb = GetComponent<Rigidbody>();
+			if(_rb == null) Debug.LogError("Speedometer: Rigidbody not found");
+		}
+
+		private void Update()
+		{
+			slider.value = _rb.velocity.magnitude / PlayerMovement.MaxSpeed;
+		}
 	}
 }

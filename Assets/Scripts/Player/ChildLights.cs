@@ -19,15 +19,15 @@ namespace Player
 		private Light[] _mediumLights;
 		private Light[] _smallLights;
 
-		// Start is called before the first frame update
 		private void Start()
 		{
 			_bigLights = GetComponentsInChildren<Light>().Where(l => l.name.Contains("Big")).ToArray();
 			_mediumLights = GetComponentsInChildren<Light>().Where(l => l.name.Contains("Mid")).ToArray();
 			_smallLights = GetComponentsInChildren<Light>().Where(l => l.name.Contains("Smol")).ToArray();
+
+			if(_bigLights.Length + _mediumLights.Length + _smallLights.Length == 0) Debug.LogError("Player child lights not found");
 		}
 
-		// Update is called once per frame
 		private void Update()
 		{
 			foreach (Light bigLight in _bigLights)

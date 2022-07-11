@@ -6879,7 +6879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2076205922}
-  rotationSpeed: 0.7
+  rotationSpeed: 45
   thrust: 200
   maxApproachDistance: 8
   brakeFactor: 0.5

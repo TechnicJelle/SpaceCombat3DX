@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace Enemy
 	{
 		public Transform target;
 
-		[Tooltip("Rotation Speed in radians per second")]
+		[Tooltip("Rotation Speed in degrees per second")]
 		public float rotationSpeed;
 
 		public float thrust;
@@ -24,14 +25,13 @@ namespace Enemy
 		private Transform _transformCached;
 		private Vector3 _position;
 
-		// Start is called before the first frame update
 		private void Start()
 		{
 			if (target == null) Debug.LogError("No target assigned");
 			_rb = GetComponent<Rigidbody>();
+			if(_rb == null) Debug.LogError("This game object does not have a Rigidbody");
 		}
 
-		// Update is called once per frame
 		private void Update()
 		{
 			_transformCached = transform;
@@ -116,17 +116,14 @@ namespace Enemy
 			if(Vector3.Distance(_position, target.position) > maxApproachDistance)
 				_rb.AddForce(thrust * Time.deltaTime * dir);
 			else
-			{
-				//brake
-				_rb.AddForce(-thrust * brakeFactor * Time.deltaTime * dir);
-			}
+				_rb.AddForce(-thrust * brakeFactor * Time.deltaTime * dir); //brake
 		}
 
 		private Vector3 FindDirToTarget(Vector3 targetDirection)
 		{
-
+			const float convFac = Mathf.PI / 180f; //for converting degrees to radians
 			// The step size is equal to speed times frame time.
-			float singleStep = rotationSpeed * Time.deltaTime;
+			float singleStep = rotationSpeed * convFac * Time.deltaTime;
 
 			// Rotate the forward vector towards the target direction by one step
 			Vector3 newDirection = Vector3.RotateTowards(_transformCached.forward, targetDirection, singleStep, 0.0f);

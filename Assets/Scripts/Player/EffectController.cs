@@ -17,9 +17,8 @@ namespace Player
 		private ParticleSystem.EmissionModule _speedLinesEmission;
 		private float _speedLinesEmissionRateOverTimeMultiplier;
 
-		private Rigidbody _rigidbody;
+		private Rigidbody _rb;
 
-		// Start is called before the first frame update
 		private void Start()
 		{
 			if (thrusters == null) Debug.LogError("Thrusters not assigned");
@@ -33,13 +32,13 @@ namespace Player
 			Debug.Log($"ThrustersEmissionOverTimeMultiplier: {_thrustersEmissionRateOverTimeMultiplier}" + " " +
 			          $"SpeedLinesEmissionOverTimeMultiplier: {_speedLinesEmissionRateOverTimeMultiplier}");
 
-			_rigidbody = GetComponent<Rigidbody>();
+			_rb = GetComponent<Rigidbody>();
+			if(_rb == null) Debug.LogError("EffectController: Rigidbody not found");
 		}
 
-		// Update is called once per frame
 		private void Update()
 		{
-			Vector3 velocity = _rigidbody.velocity;
+			Vector3 velocity = _rb.velocity;
 			float fac = velocity.magnitude / PlayerMovement.MaxSpeed;
 			float thrustersEmissionRateOverTimeMultiplier = (fac < thrusterThreshold ? 0 : fac) *  _thrustersEmissionRateOverTimeMultiplier;
 			_thrustersEmission.rateOverTimeMultiplier = thrustersEmissionRateOverTimeMultiplier;
