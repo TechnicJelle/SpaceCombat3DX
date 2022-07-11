@@ -1,40 +1,43 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyHealth : MonoBehaviour
+namespace Enemy
 {
-	public int startingHealth = 100;
-	[Tooltip("Player Collision Damage Multiplier")] public float playerCollisionDamageMultiplier = 1.0f;
-	private int _currentHealth;
-
-	private Image _healthBar;
-
-	private void Start()
+	public class EnemyHealth : MonoBehaviour
 	{
-		_healthBar = GetComponentInChildren<Image>();
-		if(_healthBar == null)
+		public int startingHealth = 100;
+		[Tooltip("Player Collision Damage Multiplier")] public float playerCollisionDamageMultiplier = 1.0f;
+		private int _currentHealth;
+
+		private Image _healthBar;
+
+		private void Start()
 		{
-			Debug.LogError("Health bar is null");
+			_healthBar = GetComponentInChildren<Image>();
+			if(_healthBar == null)
+			{
+				Debug.LogError("Health bar is null");
+			}
+			_currentHealth = startingHealth;
 		}
-		_currentHealth = startingHealth;
-	}
 
-	private void Update()
-	{
-		_healthBar.fillAmount = (float)_currentHealth / startingHealth;
-	}
-
-	private void OnCollisionEnter(Collision collision)
-	{
-		Damage((int) (collision.relativeVelocity.magnitude * playerCollisionDamageMultiplier));
-	}
-
-	public void Damage(int damage)
-	{
-		_currentHealth -= damage;
-		if(_currentHealth <= 0)
+		private void Update()
 		{
-			Destroy(gameObject);
+			_healthBar.fillAmount = (float)_currentHealth / startingHealth;
+		}
+
+		private void OnCollisionEnter(Collision collision)
+		{
+			Damage((int) (collision.relativeVelocity.magnitude * playerCollisionDamageMultiplier));
+		}
+
+		public void Damage(int damage)
+		{
+			_currentHealth -= damage;
+			if(_currentHealth <= 0)
+			{
+				EnemyManager.Instance.KillEnemy(this);
+			}
 		}
 	}
 }

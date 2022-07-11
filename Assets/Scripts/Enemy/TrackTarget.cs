@@ -27,7 +27,7 @@ namespace Enemy
 
 		private void Start()
 		{
-			if (target == null) Debug.LogError("No target assigned");
+			if (target == null) Debug.LogError("Enemy: No target assigned");
 			_rb = GetComponent<Rigidbody>();
 			if(_rb == null) Debug.LogError("This game object does not have a Rigidbody");
 		}

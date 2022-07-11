@@ -36,13 +36,13 @@ namespace Player
 			// mousePos.Normalize();
 			// mousePos *= size / 2;
 
-			float mouseY = Input.mousePosition.y / Screen.height * 2 - 1;
+			float mouseY = (float) Utils.Clamp(Input.mousePosition.y / Screen.height * 2 - 1, -1, 1);
 			float rotSpeedFac = (float) Utils.Map(_rb.velocity.magnitude, 0, MaxSpeed, speedFacMin, speedFacMax);
 			if(Math.Abs(mouseY) > threshold)
 				transform.Rotate(transform.InverseTransformDirection(transform.right), -mouseY * pitchSpeed * Time.fixedDeltaTime * rotSpeedFac);
 			// Debug.Log("mouse pos: " + mouseY);
 
-			float mouseX = Input.mousePosition.x / Screen.width * 2 - 1;
+			float mouseX = (float) Utils.Clamp(Input.mousePosition.x / Screen.width * 2 - 1, -1, 1);
 			if (Math.Abs(mouseX) > threshold)
 				transform.Rotate(transform.InverseTransformDirection(transform.forward), -mouseX * rollSpeed * Time.fixedDeltaTime * rotSpeedFac);
 
