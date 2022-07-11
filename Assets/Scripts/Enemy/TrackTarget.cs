@@ -56,7 +56,7 @@ namespace Enemy
 					if(Physics.Raycast(_position, rayDir, out RaycastHit hit, rayLength))
 					{
 						//hit
-						if(!hitSomething && hit.rigidbody.isKinematic)
+						if(!hitSomething && hit.rigidbody != null && hit.rigidbody.isKinematic)
 							hitSomething = true;
 						Debug.DrawRay(_position, rayDir * hit.distance, Color.green);
 					}
@@ -121,9 +121,8 @@ namespace Enemy
 
 		private Vector3 FindDirToTarget(Vector3 targetDirection)
 		{
-			const float convFac = Mathf.PI / 180f; //for converting degrees to radians
 			// The step size is equal to speed times frame time.
-			float singleStep = rotationSpeed * convFac * Time.deltaTime;
+			float singleStep = rotationSpeed * Mathf.Deg2Rad * Time.deltaTime;
 
 			// Rotate the forward vector towards the target direction by one step
 			Vector3 newDirection = Vector3.RotateTowards(_transformCached.forward, targetDirection, singleStep, 0.0f);
