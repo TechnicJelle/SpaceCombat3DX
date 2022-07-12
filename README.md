@@ -8,7 +8,7 @@ A combat flight sim game in space
 - `Mouse Left/Right` to roll your ship
 - `Mouse Up/Down` to pitch your ship
 - `Esc` to pause the game. You can edit volume sliders there and quite the game
-- 
+
 ## Blog
 I wrote a few blogposts about the development of this game!
 
