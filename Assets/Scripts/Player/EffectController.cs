@@ -15,6 +15,9 @@ namespace Player
 		public float speedLinesThreshold = 0.4f;
 		private float _speedLinesEmissionRateOverTimeMultiplier;
 
+		// === AUDIO === //
+		private AudioSource _audioSource;
+
 		private Rigidbody _rb;
 
 		private void Start()
@@ -30,8 +33,12 @@ namespace Player
 			Debug.Log($"ThrustersEmissionOverTimeMultiplier: {_thrustersEmissionRateOverTimeMultiplier}" + " " +
 			          $"SpeedLinesEmissionOverTimeMultiplier: {_speedLinesEmissionRateOverTimeMultiplier}");
 
+			_audioSource = GetComponent<AudioSource>();
+			if(_audioSource == null) Debug.LogError("EffectController: AudioSource not assigned");
+
 			_rb = GetComponent<Rigidbody>();
 			if(_rb == null) Debug.LogError("EffectController: Rigidbody not found");
+
 		}
 
 		private void Update()
@@ -49,6 +56,9 @@ namespace Player
 
 			// Debug.Log($"ThrustersEmissionOverTimeMultiplier: {thrustersEmissionRateOverTimeMultiplier}" + " " +
 			          // $"SpeedLinesEmissionOverTimeMultiplier: {speedLinesEmissionRateOverTimeMultiplier}");
+
+			_audioSource.volume = fac;
+			_audioSource.pitch = fac * 3;
 		}
 	}
 }

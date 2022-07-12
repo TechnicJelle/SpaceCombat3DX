@@ -6,6 +6,7 @@ namespace Enemy
 	public class EnemyHealth : MonoBehaviour
 	{
 		public int startingHealth = 100;
+		[Tooltip("Lower than this and the enemy dies")] public int deadHealth = 10;
 		[Tooltip("Player Collision Damage Multiplier")] public float playerCollisionDamageMultiplier = 1.0f;
 		private int _currentHealth;
 
@@ -34,7 +35,7 @@ namespace Enemy
 		public void Damage(int damage)
 		{
 			_currentHealth -= damage;
-			if(_currentHealth <= 0)
+			if(_currentHealth <= deadHealth)
 			{
 				EnemyManager.Instance.KillEnemy(this);
 			}
