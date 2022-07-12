@@ -7,7 +7,7 @@ A combat flight sim game in space
 - `W`/`S` to give thrust
 - `Mouse Left/Right` to roll your ship
 - `Mouse Up/Down` to pitch your ship
-- `Alt`+`F4` to close the game (will add something better for this later)
+- `Esc` to pause the game. You can edit volume sliders there and quite the game
 
 ## Why this name?
 Because it's funny! It feels like a classic, old-style name, with the 3D and the X for eXtra cool-factor.
