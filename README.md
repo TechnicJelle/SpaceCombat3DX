@@ -1,4 +1,4 @@
-# Space Combat 3D X
+# [Space Combat 3D X](https://github.com/TechnicJelle/SpaceCombat3DX#readme)
 A combat flight sim game in space
 
 ## [Click here to download!](../../releases/latest)
@@ -8,6 +8,11 @@ A combat flight sim game in space
 - `Mouse Left/Right` to roll your ship
 - `Mouse Up/Down` to pitch your ship
 - `Esc` to pause the game. You can edit volume sliders there and quite the game
+- 
+## Blog
+I wrote a few blogposts about the development of this game!
+
+Please check them out: https://technicjelle.tumblr.com/tagged/Space%20Game%203DX
 
 ## Why this name?
 Because it's funny! It feels like a classic, old-style name, with the 3D and the X for eXtra cool-factor.
